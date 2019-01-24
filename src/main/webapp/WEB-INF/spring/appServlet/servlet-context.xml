@@ -22,6 +22,8 @@
 	</beans:bean>
 	
 	<context:component-scan base-package="com.daesungra.controller" />
+	<context:component-scan base-package="com.daesungra.service" />
+	<context:component-scan base-package="com.daesungra.dao" />
 	
 	
 	
