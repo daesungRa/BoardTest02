@@ -17,7 +17,15 @@
 	<div id="container-fluid">
 		<h1>Welcome This Page!</h1>
 		<P>  The time on the server is [${serverTime}]. </P>
-		<a href="board/list">게시판 리스트 보기</a>
+		<a href="board/list">게시판 리스트 보기</a><br/>
+		<a href="bootstrapTest/bootstrapTest01">부트스트랩 테스트 페이지</a>
+	</div>
+	<div>
+		<p>
+			ContextPath: ${pageScope.cp}<br/>
+			ContextPath: <%=request.getContextPath() %><br/>
+			ContextPath: <c:out value="${cp}"></c:out>
+		</p>
 	</div>
 
 </body>

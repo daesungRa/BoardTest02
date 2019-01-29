@@ -3,11 +3,13 @@ package com.daesungra.dao;
 import java.beans.PropertyVetoException;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.List;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementSetter;
 import org.springframework.stereotype.Repository;
 
+import com.daesungra.domain.BoardVo;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 @Repository
@@ -51,4 +53,24 @@ public class BoardDaoImpl implements BoardDao {
 		
 		return result;
 	}
+
+	@Override
+	public List<BoardVo> list(int pageNum) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int insert(BoardVo bvo) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public BoardVo select(int no) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
 }

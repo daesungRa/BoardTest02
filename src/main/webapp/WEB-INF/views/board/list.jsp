@@ -14,15 +14,48 @@
 </head>
 <body>
 
-	<div class="container-fluid">
-		<h1>Responsive Columns</h1>
-		<p>Resize the browser window to see the effect.</p>
-		<p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+	<div class='navbar navbar-expand-sm justify-content-center bg-light navbar-light'>
+		<div class='navbar-header'>
+			<h4 class='mt-sm-3'>게시판 리스트</h4>
+		</div>
+	</div>
+
+	<div class="container">
+		<button class='btn btn-primary float-right mb-sm-2 move' data='write' onclick="location.href='write';">글작성</button>
 		
-		<div class="col-sm-3" style="background-color:lavender;">.col-sm-3</div>
-		<div class="col-sm-3" style="background-color:lavenderblush;">.col-sm-3</div>
-		<div class="col-sm-3" style="background-color:lavender;">.col-sm-3</div>
-		<div class="col-sm-3" style="background-color:lavenderblush;">.col-sm-3</div>
+		<table class='table text-center'>
+			<thead class='table-dark'>
+				<tr>
+					<td>번호</td>
+					<td>제목</td>
+					<td>작성자</td>
+					<td>날짜</td>
+					<td>조회수</td>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr onclick='location.href="view"'>
+					<td>1</td>
+					<td style='cursor: pointer;'>하하</td>
+					<td>daesungRa</td>
+					<td>19-01-28</td>
+					<td>0</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<ul class='pagination' style='margin-left: 42%;'>
+			<li class='page-item active'>
+				<a class='page-link' href='#'>1</a>
+			</li>
+			<li class='page-item'>
+				<a class='page-link' href='#'>2</a>
+			</li>
+			<li class='page-item'>
+				<a class='page-link' href='#'>3</a>
+			</li>
+		</ul>
 	</div>
 
 </body>
