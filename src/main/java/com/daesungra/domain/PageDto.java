@@ -11,6 +11,7 @@ public class PageDto {
 	private int pageBlock;
 	private int startPage;
 	private int endPage;
+	
 	public int getStartRow() {
 		return startRow;
 	}

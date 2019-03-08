@@ -71,10 +71,10 @@ public class BoardController {
 	}
 	
 	@RequestMapping(value="/view", method=RequestMethod.GET)
-	public String moveView (Model model, @RequestParam int no) {
+	public String moveView (Model model/*, @RequestParam int no*/) {
 		logger.info("Move to Board view Page");
-		BoardVo bvo = boardService.view(no);
-		model.addAttribute("bvo", bvo);
+		/*BoardVo bvo = boardService.view(no);
+		model.addAttribute("bvo", bvo);*/
 		
 		return "board/view";
 	}
